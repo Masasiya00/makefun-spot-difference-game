@@ -1,0 +1,38 @@
+/* Twin Lanterns — page chrome around the canvas. The game itself is
+   drawn entirely on the canvas; this file only centres it on a dark
+   backdrop and keeps it readable at any window size. */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #17102a;
+  min-height: 100%;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+#game {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  background: #17102a;
+  border: 3px solid #3a2f5c;
+  border-radius: 10px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 10px 0 0;
+  color: #c9b8e8;
+  font-size: 15px;
+  text-align: center;
+}
